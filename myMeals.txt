@@ -1,1 +1,2 @@
 breakfast = egg + milk + bread
+lunch = None
