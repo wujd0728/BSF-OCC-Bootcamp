@@ -1,2 +1,3 @@
 breakfast = egg + milk + bread
 lunch = None
+dinner = chicken + rice + potato
