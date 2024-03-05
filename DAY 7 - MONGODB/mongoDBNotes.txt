@@ -1,0 +1,38 @@
+creat documents
+
+1-  db.collectionName.insertOne({"field1":"value1});
+2-  db.collectionName.insertMany([{"field1":"value1},{"field1":"value1}]);
+
+read documents
+
+1- db.collectionName.find(); //read all documents in the collectionName
+2- db.collectionName.find({"field":"value"}); //find documents with specified fields and values
+3- db.collectionName.find().limit(3); //limit the number of returned documents
+4- db.collectionName.find().sort({"field":1}); //sort result in ascending (1) or descending (-1) order
+
+update documents
+
+1- db.collectionName.updateOne({"field":"value"}, {$set: {"field":"value}}); //update one document with the specified field and value
+2- db.collectionName.updateMany({"field":"value"}, {$set: {"field":"value"}});  updates multiple documents
+
+delete documents
+
+1- db.collectionName.deleteOne({"field":"value"}); // delete first instance of document
+2- db.collectionName.deleteMany({"field":"value"}); // delete all documents with the specified field and value
+3 - db.collectionName.deleteMany({}); //deletes all the documents inside a collection
+
+comparison operators
+
+$eq = equal to
+$ne = not equal to
+$gt = greater than
+$lt = less than
+$gte = greater than or equal to
+$lte = less than or equal to
+
+logical operators
+
+$and
+$or
+
+
